@@ -315,6 +315,7 @@ namespace MassExtractor
                     Program.ExtractFile(55582, "resources/spellJ.xml");
                     Program.ExtractFile(55605, "resources/statusJ.xml");
                     // Interesting Data
+<<<<<<< HEAD
                     //Program.ExtractFile(11, "old-spells-1.xml");
                     //Program.ExtractFile(73, "items-general.xml");
                     //Program.ExtractFile(55671, "items-general2.xml");
@@ -402,6 +403,99 @@ namespace MassExtractor
                     //Program.ExtractFile(55725, "status-names.xml");
                     //Program.ExtractFile(55733, "ability-descriptions.xml");
                     //Program.ExtractFile(55734, "spell-descriptions.xml");
+=======
+                    Program.ExtractFile(11, "old-spells-1.xml");
+                    Program.ExtractFile(73, "items-general.xml");
+                    Program.ExtractFile(55671, "items-general2.xml");
+                    Program.ExtractFile(74, "items-usable.xml");
+                    Program.ExtractFile(75, "items-weapons.xml");
+                    Program.ExtractFile(76, "items-armor.xml");
+                    Program.ExtractFile(55668, "items-armor2.xml");
+                    Program.ExtractFile(77, "items-puppet.xml");
+                    Program.ExtractFile(82, "quests.xml");
+                    Program.ExtractFile(85, "old-abilities.xml");
+                    Program.ExtractFile(86, "old-spells-2.xml");
+                    Program.ExtractFile(87, "old-statuses.xml");
+                    Program.ExtractFile(91, "items-currency.xml");
+                    Program.ExtractFile(55667, "items-voucher-slip.xml");
+                    // Dialog Tables
+                    for (ushort i = 0; i < 0x100; ++i)
+                    {
+                        Program.ExtractFile(6420 + i, String.Format("dialog-table-{0:000}.xml", i));
+                    }
+                    // Whitegate's 2nd dialog table
+                    Program.ExtractFile(57945, "dialog-table-50-2.xml");
+                    for (ushort i = 0; i < 0x100; ++i)
+                    {
+                        Program.ExtractFile(85590 + i, String.Format("dialog-table-{0:000}.xml", i + 255));
+                    }
+                    // Mob Lists
+                    for (ushort i = 0; i < 0x100; ++i)
+                    {
+                        Program.ExtractFile(6720 + i, String.Format("mob-list-{0:000}.xml", i));
+                    }
+                    for (ushort i = 0; i < 0x100; ++i)
+                    {
+                        Program.ExtractFile(86490 + i, String.Format("mob-list-{0:000}.xml", i + 255));
+                    }
+                    for (ushort i = 0; i < 0x100; ++i)
+                    {
+                        Program.ExtractFile(67910 + i, String.Format("mob-list2-{0:000}.xml", i));
+                    }
+                    // String Tables
+                    Program.ExtractFile(55465, "area-names.xml");
+                    Program.ExtractFile(55466, "area-names-search.xml");
+                    Program.ExtractFile(55467, "job-names.xml");
+                    Program.ExtractFile(55468, "job-names-short.xml");
+                    Program.ExtractFile(55469, "race-names.xml");
+                    Program.ExtractFile(55470, "character-selection-strings.xml");
+                    Program.ExtractFile(55471, "equipment-locations.xml");
+                    // More String Tables
+                    Program.ExtractFile(55645, "various-1.xml");
+                    Program.ExtractFile(55646, "error-messages.xml");
+                    Program.ExtractFile(55647, "pol-messages.xml");
+                    Program.ExtractFile(55648, "ingame-messages-1.xml");
+                    Program.ExtractFile(55649, "ingame-messages-2.xml");
+                    Program.ExtractFile(55650, "chat-filter-types.xml");
+                    Program.ExtractFile(55651, "menu-item-description.xml");
+                    Program.ExtractFile(55652, "menu-item-text.xml");
+                    Program.ExtractFile(55653, "various-2.xml");
+                    Program.ExtractFile(55654, "region-names.xml");
+                    Program.ExtractFile(55657, "weather-types.xml");
+                    Program.ExtractFile(55658, "day-names.xml");
+                    Program.ExtractFile(55659, "directions.xml");
+                    Program.ExtractFile(55660, "moon-phases.xml");
+                    Program.ExtractFile(55661, "area-names-alternate.xml");
+                    // String Tables That Used To Be Special Formats
+                    Program.ExtractFile(55695, "key-items.xml");
+                    Program.ExtractFile(55701, "ability-names.xml");
+                    Program.ExtractFile(55702, "spell-names.xml");
+                    Program.ExtractFile(55704, "titles.xml");
+                    Program.ExtractFile(55706, "quests-sandoria.xml");
+                    Program.ExtractFile(55707, "quests-bastok.xml");
+                    Program.ExtractFile(55708, "quests-windurst.xml");
+                    Program.ExtractFile(55709, "quests-jeuno.xml");
+                    Program.ExtractFile(55710, "quests-other.xml");
+                    Program.ExtractFile(55711, "quests-zilart.xml");
+                    Program.ExtractFile(55712, "quests-ahtuhrgan.xml");
+                    Program.ExtractFile(55715, "missions-sandoria.xml");
+                    Program.ExtractFile(55716, "missions-bastok.xml");
+                    Program.ExtractFile(55717, "missions-windurst.xml");
+                    Program.ExtractFile(55718, "missions-zilart.xml");
+                    Program.ExtractFile(55719, "missions-promathia.xml");
+                    Program.ExtractFile(55720, "missions-assault.xml");
+                    Program.ExtractFile(55721, "missions-ahtuhrgan.xml");
+                    Program.ExtractFile(55722, "quests-goddess.xml");
+                    Program.ExtractFile(55723, "missions-goddess.xml");
+                    Program.ExtractFile(55724, "missions-campaign.xml");
+                    Program.ExtractFile(55713, "quests-abyssea.xml");
+                    Program.ExtractFile(55735, "missions-prophecy.xml");
+                    Program.ExtractFile(55736, "missions-moogle.xml");
+                    Program.ExtractFile(55737, "missions-shantotto.xml");
+                    Program.ExtractFile(55725, "status-names.xml");
+                    Program.ExtractFile(55733, "ability-descriptions.xml");
+                    Program.ExtractFile(55734, "spell-descriptions.xml");
+>>>>>>> 7d25b2c13cb485a729322b819cfcb5c779f8b224
                 }
                 DateTime ExtractionEnd = DateTime.Now;
                 Console.WriteLine(String.Format(I18N.GetText("EndTime"), ExtractionEnd));
